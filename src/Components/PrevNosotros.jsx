@@ -19,11 +19,11 @@ const PrevNosotros = () => {
 					<Parallax
 						bgImage={parallaxBg}
 						strength={500}>
-						<div className="  w-[100vw] h-[30vh] p-12 rounded-2xl flex justify-center items-center">
+						<div className="  w-[100vw] h-[20vh] lg:h-[30vh] p-12 rounded-2xl flex justify-center items-center">
 							<h1
 								data-aos-duration="500"
 								data-aos="zoom-in-left"
-								className=" text-white text-6xl tracking-widest font-medium"
+								className=" text-4xl text-white lg:text-6xl tracking-widest font-medium"
 								style={{ fontFamily: 'Rajdhani' }}>
 								Bienvenidos a Hard Floor
 							</h1>
@@ -33,7 +33,7 @@ const PrevNosotros = () => {
 
 				<div className=" bg-gray-100 border-amber-900 border-[1px] w-[90vw] p-4  rounded-lg rounded-b-2rem flex flex-col items-center justify-center overflow-hidden pb-2 ">
 					<p
-						className=" px-16 py-4 mt-4 text-justify text-xl w-[80vw] leading-[2rem]"
+						className=" px-6 lg:px-16 lg:py-4 lg:mt-4 text-justify lg:text-xl w-[80vw] lg:leading-[2rem]"
 						data-aos="zoom-out-up"
 						data-aos-duration="500">
 						Donde la tradición y la innovación convergen para crear espacios excepcionales
@@ -49,7 +49,7 @@ const PrevNosotros = () => {
 						<p
 							data-aos="zoom-out-up"
 							data-aos-duration="500"
-							className=" px-16 py-4 text-justify text-xl w-[80vw] leading-[2rem]">
+							className=" px-6 lg:px-16 lg:py-4 mt-4 text-justify lg:text-xl w-[80vw] lg:leading-[2rem]">
 							Nuestra pasión por la artesanía y la atención al detalle nos ha permitido
 							sobresalir en un mercado en constante evolución, cada proyecto que
 							emprendemos lleva consigo la dedicación y el conocimiento acumulado a lo
@@ -61,7 +61,8 @@ const PrevNosotros = () => {
 						<p
 							data-aos="zoom-out-up"
 							data-aos-duration="500"
-							className=" px-16 py-4 text-justify text-xl w-[80vw] leading-[2rem]">
+							className=" px-6 lg:px-16 lg:py-4 mt-4 text-justify lg:text-xl w-[80vw] lg:leading-[2rem]"
+							>
 							Nos enorgullecemos de contar con las últimas tecnologías en el campo,
 							incluyendo máquinas pulidoras italianas con sistemas de aspiración
 							independientes que garantizan un ambiente limpio y saludable. Utilizamos
@@ -73,7 +74,8 @@ const PrevNosotros = () => {
 						<p
 							data-aos="zoom-out-up"
 							data-aos-duration="500"
-							className=" px-16 py-4 text-justify text-xl w-[80vw] leading-[2rem]">
+							className=" px-6 lg:px-16 lg:py-4 mt-4 text-justify lg:text-xl w-[80vw] lg:leading-[2rem]"
+							>
 							Con la combinación de tradición y tecnología de vanguardia, nos esforzamos
 							por transformar tus espacios en lugares donde la belleza y la funcionalidad
 							convergen de manera armoniosa.
@@ -81,7 +83,8 @@ const PrevNosotros = () => {
 						<p
 							data-aos="zoom-out-up"
 							data-aos-duration="500"
-							className=" px-16 py-4 text-justify text-xl w-[80vw] leading-[2rem]">
+							className=" px-6 lg:px-16 lg:py-4 mt-4 text-justify lg:text-xl w-[80vw] lg:leading-[2rem]"
+							>
 							Te invitamos a ser parte de nuestra historia, a experimentar la diferencia
 							que solo una empresa con 50 años de experiencia y tres generaciones de
 							dedicación puede brindarte
@@ -91,7 +94,7 @@ const PrevNosotros = () => {
 						<div>
 							<div className=" w-full mt-8 mb-4 flex items-center justify-center">
 								<a
-									href="#_"
+									href="#contactoPrev"
 									className="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-transparent shadow rounded-md group">
 									<span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-red-500 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
 									<span className="absolute inset-0 w-full h-full bg-white rounded-md "></span>

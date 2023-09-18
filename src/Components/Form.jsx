@@ -51,7 +51,7 @@ export default function Form() {
 				className=" flex flex-col justify-center items-center gap-4 pt-[70px] pb-[60px] px-[40px] "
 				style={{ fontFamily: 'Rajdhani' }}>
 				<div className="flex flex-col items-center justify-evenly">
-					<h4 className="text-3xl lg:text-5xl font-extrabold mb-4 text-gray-600 self-start pt-6">
+					<h4 className="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-600 self-start lg:pt-6">
 						CONTACTANOS
 					</h4>
 				</div>
@@ -61,7 +61,7 @@ export default function Form() {
 						ref={form}
 						onSubmit={sendEmail}
 						className="flex flex-col">
-						<div className="flex gap-[2rem] w-[50vw] ">
+						<div className="flex gap-[2rem] w-[95vw] ">
 							<div className="mb-4 w-[50%] ">
 								<label
 									htmlFor="user_name"
@@ -69,7 +69,7 @@ export default function Form() {
 									Nombre
 								</label>
 								<input
-									className="text-lg h-[4rem] bg-white shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px]"
+									className="lg:text-lg lg:h-[4rem] bg-white shadow appearance-none border rounded w-[100%] lg:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px]"
 									name="user_name"
 									id="user_name"
 									type="text"
@@ -86,7 +86,7 @@ export default function Form() {
 									Email
 								</label>
 								<input
-									className=" text-lg h-[4rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+									className=" lg:text-lg lg:h-[4rem] w-[100%] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded lg:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 									name="user_email"
 									id="user_email"
 									type="email"
@@ -105,7 +105,7 @@ export default function Form() {
 								Teléfono
 							</label>
 							<input
-								className="text-lg h-[4rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight   "
+								className="lg:text-lg lg:h-[4rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight   "
 								name="user_phone"
 								type="tel"
 								placeholder="Ingrese su teléfono"
@@ -121,7 +121,7 @@ export default function Form() {
 								Localidad
 							</label>
 							<input
-								className="text-lg h-[4rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+								className="lg:text-lg lg:h-[4rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 								name="user_localidad"
 								id="localidad"
 								type="text"
@@ -138,7 +138,7 @@ export default function Form() {
 								Mensaje
 							</label>
 							<textarea
-								className="text-lg h-[8rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+								className="lg:text-lg h-[8rem] bg-white hover:border-red-200 hover:border-[1px] focus:border-red-300 focus:border-[1px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 								name="message"
 								id="message"
 								type="text"
@@ -159,7 +159,7 @@ export default function Form() {
 								userData.user_localidad.length < 1 ||
 								userData.message.length < 1
 							}>
-							<h4 className="bg-red-600 max-w-[50vw] h-[2rem] text-xl flex items-center justify-center">
+							<h4 className="bg-red-600 lg:max-w-[50vw] h-[2rem] text-xl flex items-center justify-center">
 								Enviar
 							</h4>
 						</button>

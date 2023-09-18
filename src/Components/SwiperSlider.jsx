@@ -33,14 +33,14 @@ function SwiperSlider({ productImages }) {
 					<SwiperSlide key={index}>
 						<div
 							key={index}
-							className=" border-amber-900 border-2 ">
+							className=" relative lg:static left-[1rem] w-[22rem] lg:w-[24rem] border-amber-900 border-2 ">
 							<Zoom>
 								<img
 									data-aos-duration="500"
 									data-aos="zoom-in-up"
 									src={image.src}
 									alt={image.alt}
-									className=" cover  w-[24rem] h-[21rem]"
+									className=" cover w-[24rem] lg:w-[24rem] h-[21rem]"
 								/>
 							</Zoom>
 						</div>

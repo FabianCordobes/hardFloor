@@ -1,11 +1,28 @@
 import { Link } from 'react-router-dom';
 import logoImg from '/public/logo.png';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaBars } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
+
+import { slide as Menu } from 'react-burger-menu';
 
 const Navbar = () => {
 	const [isNavVisible, setIsNavVisible] = useState(true); // Estado para controlar la visibilidad de la barra de navegación
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+	const [isMobile, setIsMobile] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 768);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -68,36 +85,72 @@ const Navbar = () => {
 				</div>
 
 				<div className="flex items-center gap-[10rem] ">
-					<ul className="flex flex-row justify-center gap-6 text-black text-xl font-bold">
-						<a
-							href="#home"
-							className=" nav-link smooth-scroll">
-							INICIO
-						</a>
-						<a
-							href="#serviciosPrev"
-							className=" nav-link smooth-scroll">
-							SERVICIOS
-						</a>
-						<a
-							href="#preciosPrev"
-							className=" nav-link smooth-scroll">
-							PRECIOS
-						</a>
-						<a
-							href="#nosotrosPrev"
-							className=" nav-link smooth-scroll">
-							NOSOTROS
-						</a>
-						<a
-							href="#contactoPrev"
-							className=" nav-link smooth-scroll">
-							CONTACTO
-						</a>
-					</ul>
-
+					{/* ... */}
+					{isMobile ? (
+						<>
+							<button
+								className="block md:hidden w-8 h-8 mr-4"
+								onClick={() => setMenuOpen(!menuOpen)}>
+								<FaBars className="text-3xl text-black" />
+							</button>
+							<Menu>
+								<a
+									href="#home"
+									className="menu-item smooth-scroll">
+									INICIO
+								</a>
+								<a
+									href="#serviciosPrev"
+									className="menu-item smooth-scroll">
+									SERVICIOS
+								</a>
+								<a
+									href="#preciosPrev"
+									className="menu-item smooth-scroll">
+									PRECIOS
+								</a>
+								<a
+									href="#nosotrosPrev"
+									className="menu-item smooth-scroll">
+									NOSOTROS
+								</a>
+								<a
+									href="#contactoPrev"
+									className="menu-item smooth-scroll">
+									CONTACTO
+								</a>
+							</Menu>
+						</>
+					) : (
+						<ul className="flex flex-row justify-center gap-6 text-black text-xl font-bold">
+							<a
+								href="#home"
+								className="nav-link smooth-scroll">
+								INICIO
+							</a>
+							<a
+								href="#serviciosPrev"
+								className="nav-link smooth-scroll">
+								SERVICIOS
+							</a>
+							<a
+								href="#preciosPrev"
+								className="nav-link smooth-scroll">
+								PRECIOS
+							</a>
+							<a
+								href="#nosotrosPrev"
+								className="nav-link smooth-scroll">
+								NOSOTROS
+							</a>
+							<a
+								href="#contactoPrev"
+								className="nav-link smooth-scroll">
+								CONTACTO
+							</a>
+						</ul>
+					)}
 					<ul className="text-black flex justify-center gap-4 mr-4  ">
-						
 						<Link
 							to={'https://instagram.com/hard.floor?igshid=MzRlODBiNWFlZA=='}
 							target="blank_">
