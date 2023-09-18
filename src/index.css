@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300&display=swap');
+
+:root {
+	font-family: 'Bebas Neue', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	/* background-image: url('/public/wallpaperflare.com_wallpaper.jpg'); */
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #ffffff;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	/* display: flex; */
+
+	/* place-items: center; */
+	/* align-items: center; */
+}
+
+/* Mostrar/ocultar contenido preview en Home */
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.8s ease-in-out;
+}
+
+.show {
+	max-height: 1000px; /* Set a value higher than the expected height of the content */
+}
+
+.hide {
+	max-height: 0;
+}
+
+.arrow {
+	font-size: 2rem;
+	font-weight: 500;
+}
+.arrow:hover {
+  -webkit-animation-name: parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+.down:hover {
+	transform: translateY(4px);
+	
+}
+.up:hover {
+	transform: translateY(-4px);
+}
+.left:hover {
+  transform: translateX(-8px);
+}
+.right:hover {
+  transform: translateX(8px);
+
+}
+
+@-moz-keyframes parpadeo {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes parpadeo {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes parpadeo {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Estilo para el hover con línea roja */
+.nav-link {
+	position: relative;
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s, border-bottom 0.3s ease-in-out;
+ }
+ 
+ .nav-link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: red;
+	transition: width 0.3s ease-in-out;
+	transform: translateX(-50%);
+ }
+ 
+ .nav-link:hover {
+	color: red;
+ }
+ 
+ .nav-link:hover::before {
+	width: 100%;
+ }
+ 
+
+ /* Estilo para el desplazamiento suave */
+.smooth-scroll {
+	scroll-behavior: smooth;
+ }
+
+ .container:hover img {
+	transform: scale(1.2);
+	transition: transform 0.2s ease-in-out;
+ }
