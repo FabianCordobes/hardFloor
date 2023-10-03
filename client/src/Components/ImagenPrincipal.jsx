@@ -5,6 +5,7 @@ import imagen3 from '../assets/imagen3.webp';
 import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import imageMobile from '../assets/imageMobile.png';
+import imageMobileCompleta from '../assets/imagenMobilecompleta.png';
 
 const ImagenPrincipal = () => {
 	return (
@@ -13,7 +14,8 @@ const ImagenPrincipal = () => {
 			className="flex flex-col mt-0 ">
 			{isMobile ? (
 				<div className="mb-[2rem] mt-[5rem] flex flex-col justify-center items-center">
-					<img
+					<img src={imageMobileCompleta} alt="" className='w-[85%]' />
+					{/* <img
 						src={imageMobile}
 						alt="Deck Mobile Background"
 						className="relative -z-1 left-[0rem]   "
@@ -66,7 +68,7 @@ const ImagenPrincipal = () => {
 						<h1 className=" text-white font-extrabold text-xl w-[58rem] tracking-[-0.02rem] ">
 							50 AÑOS DE EXPERIENCIA
 						</h1>
-					</div>
+					</div> */}
 				</div>
 			) : (
 				<div>
