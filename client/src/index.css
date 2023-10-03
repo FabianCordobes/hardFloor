@@ -24,10 +24,11 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	/* display: flex; */
+	display: flex;
+	flex-direction: column;
 
-	/* place-items: center; */
-	/* align-items: center; */
+	place-items: center;
+	align-items: center;
 }
 
 /* Mostrar/ocultar contenido preview en Home */

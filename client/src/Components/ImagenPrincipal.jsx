@@ -14,7 +14,7 @@ const ImagenPrincipal = () => {
 			className="flex flex-col mt-0 ">
 			{isMobile ? (
 				<div className="mb-[2rem] mt-[5rem] flex flex-col justify-center items-center">
-					<img src={imageMobileCompleta} alt="" className='w-[100%]' />
+					<img src={imageMobileCompleta} alt="" className='w-[85%]' />
 					{/* <img
 						src={imageMobile}
 						alt="Deck Mobile Background"
