@@ -12,12 +12,61 @@ const ImagenPrincipal = () => {
 			id="home"
 			className="flex flex-col mt-0 ">
 			{isMobile ? (
-				<div className='mb-[2rem]'>
+				<div className="mb-[2rem] mt-[5rem] flex flex-col justify-center items-center">
 					<img
 						src={imageMobile}
 						alt="Deck Mobile Background"
-						className='relative left-[2.05rem] '
+						className="relative -z-1 left-[0rem]   "
 					/>
+
+					<div className="relative bottom-[57.4rem] right-[2px] flex justify-center z-99 tracking-[-0.17em] leading-6 ">
+						<h1 className="text-white font-extrabold text-[1.6rem] w-[22.8rem]">
+							DESCUBRÍ LA EXCELENCIA EN PISOS DE MADERA
+						</h1>
+					</div>
+
+					<div className=" relative bottom-[55.5rem]  grid grid-cols-2 gap-6 gap">
+						<img
+							src={imagen1}
+							alt=""
+							className="w-[150px] h-[165px] object-cover rounded-lg  border-4 border-[#4d3518] shadow-lg shadow-black "
+						/>
+						<img
+							src={imagen2}
+							alt=""
+							className="w-[150px] h-[165px] object-cover rounded-lg  border-4 border-[#4d3518] shadow-lg shadow-black "
+						/>
+						<img
+							src={imagen3}
+							alt=""
+							className="w-[150px] h-[165px] object-cover rounded-lg  border-4 border-[#4d3518] shadow-lg shadow-black "
+						/>
+					</div>
+
+					<div className=" relative left-[4.5rem] bottom-[56rem] flex justify-center">
+						<h1 className="font-extrabold text-4xl w-[10rem] text-right tracking-[-0.2rem] leading-[1.4rem]">
+							CALIDAD <span className=" text-red-600">PREMIUM</span>
+						</h1>
+					</div>
+
+					<ul className="relative z-1 flex flex-col justify-center left-[4.2rem] bottom-[53rem] text-right text-2xl font-extrabold leading-[2rem] ">
+						<li>DISEÑO</li>
+						<li>CALIDAD</li>
+						<li>CONFORT</li>
+						<li>TECNOLOGÍA</li>
+					</ul>
+
+					<div className="relative z-1 flex justify-center right-[4.2rem] bottom-[61.2rem]">
+						<h1 className=" text-white font-medium text-lg w-[7rem]  tracking-widest leading-[1.3rem]">
+							COTIZÁ<span className="font-extrabold"> HOY </span>MISMO
+						</h1>
+					</div>
+
+					<div className="relative z-1 flex justify-center right-[0.2rem] bottom-[44.7rem]">
+						<h1 className=" text-white font-extrabold text-xl w-[58rem] tracking-[-0.02rem] ">
+							50 AÑOS DE EXPERIENCIA
+						</h1>
+					</div>
 				</div>
 			) : (
 				<div>
