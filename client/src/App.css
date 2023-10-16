@@ -11,6 +11,8 @@
 
 @media(max-width: 800px) {
   #root {
+  max-width: 978px;
+
     overflow-x: hidden;
     padding: 1rem;
   }
