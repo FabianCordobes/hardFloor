@@ -250,7 +250,7 @@ const Home = () => {
 						<img
 							src={bigMarco}
 							alt=""
-							className="w-[100vw] h-[156vh] absolute right-[2rem]  lg:right-[0rem]"
+							className="w-[100vw] h-[156vh] lg:h-[119vh] absolute right-[2rem]  lg:right-[0rem]"
 						/>
 					</div>
 
@@ -259,7 +259,7 @@ const Home = () => {
 							<img
 								src={serviceImg2}
 								alt=""
-								className="absolute cover w-[95.2vw] h-[153vh] top-[.6rem] lg:top-[2.4rem] right-[2.5rem] lg:right-[2.4rem]"
+								className="absolute cover w-[95.2vw] h-[153vh] lg:h-[110vh] top-[.6rem] lg:top-[2.4rem] right-[2.5rem] lg:right-[2.4rem]"
 							/>
 						</div>
 
