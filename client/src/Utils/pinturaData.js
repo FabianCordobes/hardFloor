@@ -1,4 +1,4 @@
-import pintura1 from '../assets/pintura/1.jpg';
+import pintura1 from '../assets/Pintura/1.jpg';
 
 const pinturaImages = [
 	{ src: pintura1, alt: 'Pintura ext-int 1' },
