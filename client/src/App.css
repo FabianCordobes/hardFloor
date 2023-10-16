@@ -1,8 +1,8 @@
 #root {
   /* max-width: 1280px; */
   margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   max-width: 650px;
 
     overflow-x: hidden;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 }
 
