@@ -4,14 +4,12 @@ import { FaFacebook, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
 import { slide as Menu } from 'react-burger-menu';
-import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
 	const [isNavVisible, setIsNavVisible] = useState(true); // Estado para controlar la visibilidad de la barra de navegación
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 
 	const [isMobile, setIsMobile] = useState(false);
-	const [menuOpen, setMenuOpen] = useState(false);
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
