@@ -14,6 +14,10 @@ import marcasImages from '../../Utils/marcasData';
 import mueblesImages from '../../Utils/mueblesData';
 import escalerasImages from '../../Utils/escaleraData';
 import revestimientosImages from '../../Utils/revestimientosData';
+import pergolasImages from '../../Utils/pergolasData';
+import pinturaImages from '../../Utils/pinturaData';
+import precios from '../../Utils/precios';
+
 import marcoImg from '../../assets/marco.png';
 import bigMarco from '../../assets/big_marco.png';
 
@@ -27,7 +31,6 @@ import maderas7 from '../../assets/tiposdeMadera/maderas_07.jpg';
 import maderas8 from '../../assets/tiposdeMadera/maderas_08.jpg';
 import maderas9 from '../../assets/tiposdeMadera/maderas_09.jpg';
 import maderas10 from '../../assets/tiposdeMadera/maderas_10.jpg';
-import precios from '../../Utils/precios';
 
 const Home = () => {
 	return (
@@ -41,8 +44,7 @@ const Home = () => {
 			{/* Prev. Servicios */}
 			<div
 				id="serviciosPrev"
-				className="flex flex-col justify-center items-center"
-				style={{ fontFamily: 'Rajdhani' }}>
+				className="flex flex-col justify-center items-center">
 				<div className="mt-4 flex flex-col items-center bottom-[1.5rem] shadow-md shadow-[#222020] mb-[2.6rem] ">
 					<img
 						src={marcoImg}
@@ -54,21 +56,20 @@ const Home = () => {
 							bgImage={serviceImg}
 							strength={700}
 							className="relative top-[1.78rem] w-[94vw] h-[22.3vh] ">
-							<div className=" lg:relative bottom-[2rem]  w-[95vw] h-[20vh] lg:h-[30vh] p-12 flex justify-center items-center flex-col lg:gap-8">
+							<div className=" lg:relative bottom-[2rem]  w-[95vw] h-[22vh] lg:h-[30vh] lg:p-12 flex justify-between lg:justify-center items-center flex-col lg:gap-8">
 								<h1
 									data-aos-duration="500"
 									data-aos="zoom-in-left"
-									className=" text-white text-3xl lg:text-6xl tracking-widest font-medium"
-									style={{ fontFamily: 'Rajdhani' }}>
+									className=" text-white text-2xl lg:text-6xl tracking-widest font-medium">
 									Nuestros Servicios
 								</h1>
-								<div className="flex items-center justify-around gap-4 lg:gap-4 lg:w-[85vw]">
+								<div className="flex text-white items-center justify-around flex-col lg:flex-row gap-4 lg:gap-4 lg:w-[85vw]">
 									<ul className="flex  justify-between lg:gap-[0rem] lg:w-[45vw] lg:text-2xl">
 										<li>Venta y colocación</li>
 										<li>Restauración</li>
 										<li>Parquet / Pisos con diseños </li>
 									</ul>
-									<ul className="flex  justify-between lg:gap-[0rem] lg:w-[30vw] lg:text-2xl">
+									<ul className="flex  justify-between gap-12 lg:gap-[0rem] my-4 lg:my-0 lg:w-[30vw] lg:text-2xl">
 										<li>Pulido </li>
 										<li>Hidrolaqueado</li>
 										<li>Plastificado</li>
@@ -81,40 +82,10 @@ const Home = () => {
 
 				<div className="grid grid-cols-1 lg:grid-cols-4 w-[100vw] px-[4.5	rem] bg-[#5E2217] mt-4 ">
 					{/* Pisos de madera */}
-					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem] lg:ml-[0.9rem] lg:mx-4 mt-6 lg:mt-0 flex flex-col items-center ">
+					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem] lg:ml-[0.9rem] lg:mx-4 mt-6 lg:mt-0 flex flex-col lg:items-center ">
 						<SwiperSlider productImages={pisosImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-[2.25rem] font-light mb-4">Pisos de madera</h2>
-							<a href="#contactoPrev">
-								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
-									CONSULTAR
-								</button>
-							</a>
-						</div>
-
-						{/* slider */}
-					</div>
-
-					{/* Escaleras de madera */}
-					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
-						<SwiperSlider productImages={escalerasImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Escaleras</h2>
-
-							<a href="#contactoPrev">
-								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
-									CONSULTAR
-								</button>
-							</a>
-						</div>
-						{/* slider */}
-					</div>
-
-					{/* Revestimientos */}
-					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
-						<SwiperSlider productImages={revestimientosImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Revestimientos</h2>
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Pisos de madera</h2>
 							<a href="#contactoPrev">
 								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
 									CONSULTAR
@@ -127,8 +98,8 @@ const Home = () => {
 					{/* Decks */}
 					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
 						<SwiperSlider productImages={decksImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Decks</h2>
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Decks</h2>
 							<a href="#contactoPrev">
 								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
 									CONSULTAR
@@ -140,9 +111,37 @@ const Home = () => {
 
 					{/* Pergolas */}
 					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem] lg:mx-4 mt-4 lg:ml-[1rem] lg:mt-0 flex flex-col items-center ">
-						<SwiperSlider productImages={pisosImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Pergolas</h2>
+						<SwiperSlider productImages={pergolasImages} />
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Pérgolas</h2>
+							<a href="#contactoPrev">
+								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
+									CONSULTAR
+								</button>
+							</a>
+						</div>
+						{/* slider */}
+					</div>
+
+					{/* Escaleras de madera */}
+					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
+						<SwiperSlider productImages={escalerasImages} />
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Escaleras</h2>
+							<a href="#contactoPrev">
+								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
+									CONSULTAR
+								</button>
+							</a>
+						</div>
+						{/* slider */}
+					</div>
+
+					{/* Revestimientos */}
+					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
+						<SwiperSlider productImages={revestimientosImages} />
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Revestimientos</h2>
 							<a href="#contactoPrev">
 								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
 									CONSULTAR
@@ -155,8 +154,8 @@ const Home = () => {
 					{/* Muebles */}
 					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
 						<SwiperSlider productImages={mueblesImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Muebles</h2>
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Muebles</h2>
 							<a href="#contactoPrev">
 								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
 									CONSULTAR
@@ -168,9 +167,9 @@ const Home = () => {
 
 					{/* Pintura ext/int */}
 					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0  flex flex-col items-center ">
-						<SwiperSlider productImages={pisosImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Pintura ext/int</h2>
+						<SwiperSlider productImages={pinturaImages} />
+						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-4 mb-6 lg:mb-12 flex flex-col items-center lg:items-start justify-between  lg:gap-8 lg:ml-[7.5rem]">
+							<h2 className="text-3xl lg:text-4xl mb-4">Pintura ext/int</h2>
 							<a href="#contactoPrev">
 								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
 									CONSULTAR
@@ -179,33 +178,11 @@ const Home = () => {
 						</div>
 						{/* slider */}
 					</div>
-
-					{/* Marcas */}
-					<div className=" w-[23rem] lg:w-[22rem] bg-[#5E2217] ml-[0.6rem]   lg:ml-[1rem] lg:mx-4 mt-4 lg:mt-0 flex flex-col items-center ">
-						<SwiperSlider productImages={marcasImages} />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-white lg:w-[30vw] mt-2 lg:mt-4 mb-6 lg:mb-12 flex flex-col items-start justify-between gap-8 ml-[7.5rem]">
-							<h2 className="text-4xl mb-4">Marcas</h2>
-							<a href="#contactoPrev">
-								<button className="  text-white px-4 py-2 text-lg bg-[#dca946] font-light tracking-wider hover:bg-white hover:text-black hover:border-2 hover:border-[#9e623a] transition-all duration-400 ">
-									CONSULTAR
-								</button>
-							</a>
-						</div>
-						{/* slider */}
-					</div>
-
-					{/* Precios */}
-					{/* <div className="bg-gray-100  m-4 flex flex-col items-center hover:border-red-300 hover:border-[1px] transition-all duration-200">
-						<SwiperSlider />
-						<div className=" pb-2 rounded-lg rounded-b-2rem text-black w-[30vw] mt-6 mb-[6rem]  flex flex-col items-center">
-							<h2 className="text-4xl mb-4">Precios</h2>
-						</div>
-					</div> */}
 				</div>
 
-				<div className="w-[99vw] h-[40vh] bg-amber-800 mb-0 flex items-center justify-center gap-[3rem] ">
-					<h2 className="ml-4 text-xl">Descubrí nuestros tipos de madera disponible</h2>
-					<div className=" grid grid-cols-5 w-[70%]">
+				<div className="w-[98.7vw] py-4 lg:py-0 lg:h-[40vh] bg-amber-800 mb-0 flex flex-col lg:flex-row items-center justify-around lg:justify-center gap-[2rem] ">
+					<h2 className="lg:ml-2 px-4 lg:px-0 text-2xl">Descubrí nuestros tipos de madera disponible</h2>
+					<div className=" grid grid-cols-2 lg:grid-cols-5 w-[90%] lg:w-[70%] mr-2">
 						<img
 							src={maderas1}
 							alt=""
@@ -248,6 +225,20 @@ const Home = () => {
 						/>
 					</div>
 				</div>
+
+				<div className="w-[99vw] h-[43vh]  bg-amber-500 mb-0 py-4 lg:py-0 flex flex-col lg:flex-row items-center justify-around lg:justify-center gap-[1rem] ">
+					<h2 className="ml-4 text-2xl">¡Conocé las marcas con las que trabajamos!</h2>
+					<div className=" grid grid-cols-2 lg:grid-cols-3 w-[100%]  lg:w-[75%] ml-[7rem] lg:ml-[5rem]  gap-y-2">
+						{marcasImages?.map((marca, index) => (
+							<img
+								className="w-[40%]"
+								key={index}
+								src={marca.src}
+								alt={marca.alt}
+							/>
+						))}
+					</div>
+				</div>
 			</div>
 
 			<div>
@@ -259,7 +250,7 @@ const Home = () => {
 						<img
 							src={bigMarco}
 							alt=""
-							className="w-[100vw] absolute right-[0rem]"
+							className="w-[100vw] h-[156vh] absolute right-[2rem]  lg:right-[0rem]"
 						/>
 					</div>
 
@@ -268,26 +259,24 @@ const Home = () => {
 							<img
 								src={serviceImg2}
 								alt=""
-								className="absolute cover w-[95.2vw] h-[108vh] top-[2.4rem] right-[2rem] lg:right-[2.4rem]"
+								className="absolute cover w-[95.2vw] h-[153vh] top-[.6rem] lg:top-[2.4rem] right-[2.5rem] lg:right-[2.4rem]"
 							/>
 						</div>
 
-						<div
-							className="relative mt-20 flex flex-col items-center justify-center gap-[1rem]"
-							style={{ fontFamily: 'Rajdhani' }}>
+						<div className="relative mt-20 flex flex-col items-center justify-center gap-[1rem]">
 							<div className="lg:p-4 p-0 lg:px-12 w-[100vw]">
 								<h2
 									data-aos-delay="500"
 									data-aos-duration="500"
 									data-aos="fade-right"
-									className=" w-[25rem] lg:w-[auto] text-[2.3rem] lg:text-[4rem] tracking-wider leading-[2.5rem] lg:leading-[3.7rem] mb-[2rem] ">
+									className=" w-[23.5rem] lg:w-[auto] text-[2.2rem] lg:text-[4rem] tracking-wider leading-[2.5rem] lg:leading-[3.7rem] mb-[2rem] ">
 									¡Nuestra gran experiencia nos avala!
 								</h2>
 								<h2
 									data-aos-delay="500"
 									data-aos-duration="500"
 									data-aos="fade-right"
-									className="text-[2rem] tracking-wider lg:mt-8 leading-[2.5rem] lg:leading-[3.7rem] ">
+									className="text-[1.7rem] tracking-wider lg:mt-8 leading-[2.5rem] lg:leading-[3.7rem] ">
 									Contamos con personal altamente capacitado en cada área.
 								</h2>
 							</div>
@@ -393,6 +382,7 @@ const Home = () => {
 				className="bg-gray-100 w-[92vw] mt-[1rem]">
 				<Form />
 			</div>
+
 			<div className="w-full">
 				<Footer />
 			</div>

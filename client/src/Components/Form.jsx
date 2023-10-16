@@ -49,7 +49,7 @@ export default function Form() {
 		<>
 			<div
 				className=" flex flex-col justify-center items-center gap-4 pt-[70px] pb-[60px] px-[40px] "
-				style={{ fontFamily: 'Rajdhani' }}>
+				>
 				<div className="flex flex-col items-center justify-evenly">
 					<h4 className="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-600 self-start lg:pt-6">
 						CONTACTANOS

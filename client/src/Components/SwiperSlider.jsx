@@ -23,6 +23,7 @@ function SwiperSlider({ productImages }) {
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={50}
 				slidesPerView={1}
+				loop={true}
 				navigation={{
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',

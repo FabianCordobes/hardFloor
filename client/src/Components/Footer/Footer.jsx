@@ -41,7 +41,7 @@ export default function Footer() {
 				<div className="w-full md:w-auto mt-6 lg:mt-auto mb-10 md:mb-0">
 					<p className="text-sm font-bold mb-2 text-center md:text-left">Contacto</p>
 					<p className="text-sm text-center md:text-left">
-						<a href="tel://1165282356">Tel: 11 3431 2882</a>
+						<a href="tel://1165282356">Tel: 11 6528 2356</a>
 					</p>
 					<p className="text-sm text-center md:text-left">
 						<a href="">Email:</a>

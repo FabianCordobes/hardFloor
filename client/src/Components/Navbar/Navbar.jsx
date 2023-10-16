@@ -169,7 +169,7 @@ const Navbar = () => {
 			)}
 
 			{/* Renderiza el menú burger en dispositivos móviles */}
-			{/* {isMobile && (
+			{isMobile && (
 				<Menu
 					isOpen={isMobileMenuOpen}
 					onStateChange={({ isOpen }) => setIsMobileMenuOpen(isOpen)}
@@ -218,7 +218,7 @@ const Navbar = () => {
 						</Link>
 					</div>
 				</Menu>
-			)} */}
+			)}
 		</header>
 	);
 };

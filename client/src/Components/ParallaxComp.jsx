@@ -10,7 +10,7 @@ const ParallaxComp = () => {
 				<div className="  w-[100vw] h-[30vh] p-12 rounded-2xl flex justify-center items-center">
 					<h1
 						className=" text-white text-6xl tracking-widest font-medium"
-						style={{ fontFamily: 'Rajdhani' }}>
+						>
 						Nuestros Servicios
 					</h1>
 				</div>

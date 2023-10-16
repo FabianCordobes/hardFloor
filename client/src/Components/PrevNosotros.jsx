@@ -32,7 +32,7 @@ const PrevNosotros = () => {
 									data-aos-duration="500"
 									data-aos="zoom-in-left"
 									className=" text-4xl text-white lg:text-6xl tracking-widest font-medium"
-									style={{ fontFamily: 'Rajdhani' }}>
+									>
 									Bienvenidos a Hard Floor
 								</h1>
 							</div>
