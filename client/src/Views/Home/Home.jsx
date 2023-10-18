@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax';
 import serviceImg from '../../assets/servicios_bg.webp';
 import SwiperSlider from '../../Components/SwiperSlider';
 import serviceImg2 from '../../assets/serviceImg2.webp';
+import serviceImg2Mobile from '../../assets/serviceImg2_mobile.jpg';
 import { FaBox, FaTools, FaUser } from 'react-icons/fa';
 import Form from '../../Components/Form';
 import Footer from '../../Components/Footer/Footer';
@@ -21,16 +22,16 @@ import precios from '../../Utils/precios';
 import marcoImg from '../../assets/marco.png';
 import bigMarco from '../../assets/big_marco.png';
 
-import maderas1 from '../../assets/tiposdeMadera/maderas_01.jpg';
-import maderas2 from '../../assets/tiposdeMadera/maderas_02.jpg';
-import maderas3 from '../../assets/tiposdeMadera/maderas_03.jpg';
-import maderas4 from '../../assets/tiposdeMadera/maderas_04.jpg';
-import maderas5 from '../../assets/tiposdeMadera/maderas_05.jpg';
-import maderas6 from '../../assets/tiposdeMadera/maderas_06.jpg';
-import maderas7 from '../../assets/tiposdeMadera/maderas_07.jpg';
-import maderas8 from '../../assets/tiposdeMadera/maderas_08.jpg';
-import maderas9 from '../../assets/tiposdeMadera/maderas_09.jpg';
-import maderas10 from '../../assets/tiposdeMadera/maderas_10.jpg';
+import maderas1 from '../../assets/tiposdeMadera/maderas_1.jpg';
+import maderas2 from '../../assets/tiposdeMadera/maderas_2.jpg';
+import maderas3 from '../../assets/tiposdeMadera/maderas_3.jpg';
+import maderas4 from '../../assets/tiposdeMadera/maderas_4.jpg';
+import maderas5 from '../../assets/tiposdeMadera/maderas_5.jpg';
+import maderas6 from '../../assets/tiposdeMadera/maderas_6.jpg';
+import maderas7 from '../../assets/tiposdeMadera/maderas_7.jpg';
+import maderas8 from '../../assets/tiposdeMadera/maderas_8.jpg';
+
+import { isMobile } from 'react-device-detect';
 
 const Home = () => {
 	return (
@@ -181,8 +182,10 @@ const Home = () => {
 				</div>
 
 				<div className="w-[98.7vw] py-4 lg:py-0 lg:h-[40vh] bg-amber-800 mb-0 flex flex-col lg:flex-row items-center justify-around lg:justify-center gap-[2rem] ">
-					<h2 className="lg:ml-2 px-4 lg:px-0 text-2xl">Descubrí nuestros tipos de madera disponible</h2>
-					<div className=" grid grid-cols-2 lg:grid-cols-5 w-[90%] lg:w-[70%] mr-2">
+					<h2 className="lg:ml-2 px-4 lg:px-0 text-2xl">
+						Descubrí nuestros tipos de madera disponible
+					</h2>
+					<div className=" grid grid-cols-2 lg:grid-cols-4 w-[90%] lg:w-[60%] lg:max-h-[90%] lg:gap-2 mr-2">
 						<img
 							src={maderas1}
 							alt=""
@@ -215,14 +218,6 @@ const Home = () => {
 							src={maderas8}
 							alt=""
 						/>
-						<img
-							src={maderas9}
-							alt=""
-						/>
-						<img
-							src={maderas10}
-							alt=""
-						/>
 					</div>
 				</div>
 
@@ -250,33 +245,41 @@ const Home = () => {
 						<img
 							src={bigMarco}
 							alt=""
-							className="w-[100vw] h-[156vh] lg:h-[119vh] absolute right-[2rem]  lg:right-[0rem]"
+							className="w-[100vw] h-[128vh] lg:h-[119vh] absolute right-[2rem]  lg:right-[0rem] cover"
 						/>
 					</div>
 
 					<div className="flex flex-col items-center">
 						<div>
-							<img
-								src={serviceImg2}
-								alt=""
-								className="absolute cover w-[95.2vw] h-[153vh] lg:h-[110vh] top-[.6rem] lg:top-[2.4rem] right-[2.5rem] lg:right-[2.4rem]"
-							/>
+							{isMobile ? (
+								<img
+									src={serviceImg2Mobile}
+									alt=""
+									className="absolute cover w-[95.2vw] h-[125vh]  top-[.6rem]  right-[2.5rem] "
+								/>
+							) : (
+								<img
+									src={serviceImg2}
+									alt=""
+									className="absolute cover w-[95.2vw] h-[153vh] lg:h-[110vh] top-[.6rem] lg:top-[2.4rem] right-[2.5rem] lg:right-[2.4rem]"
+								/>
+							)}
 						</div>
 
-						<div className="relative mt-20 flex flex-col items-center justify-center gap-[1rem]">
+						<div className="relative mt-8 lg:mt-20 flex flex-col items-center justify-center gap-[1rem]">
 							<div className="lg:p-4 p-0 lg:px-12 w-[100vw]">
 								<h2
 									data-aos-delay="500"
 									data-aos-duration="500"
 									data-aos="fade-right"
-									className=" w-[23.5rem] lg:w-[auto] text-[2.2rem] lg:text-[4rem] tracking-wider leading-[2.5rem] lg:leading-[3.7rem] mb-[2rem] ">
+									className=" w-[24rem]  lg:w-[auto] text-[2rem] lg:text-[4rem] tracking-wider leading-[2.5rem] lg:leading-[3.7rem] mb-[2rem] ">
 									¡Nuestra gran experiencia nos avala!
 								</h2>
 								<h2
 									data-aos-delay="500"
 									data-aos-duration="500"
 									data-aos="fade-right"
-									className="text-[1.7rem] tracking-wider lg:mt-8 leading-[2.5rem] lg:leading-[3.7rem] ">
+									className="text-[1.7rem] tracking-wider lg:mt-8 leading-[2rem] lg:leading-[3.7rem] ">
 									Contamos con personal altamente capacitado en cada área.
 								</h2>
 							</div>
@@ -285,7 +288,7 @@ const Home = () => {
 									data-aos-delay="600"
 									data-aos-duration="500"
 									data-aos="zoom-out-up"
-									className="  flex items-center gap-[20px] mt-12 lg:mt-auto my-4">
+									className="  flex items-center gap-[20px] mt-4 lg:mt-auto my-2">
 									<FaUser className="relative left-[2rem] bottom-[1rem] lg:static text-[6rem] lg:text-[3rem] self-start" />
 									<div className=" flex flex-col">
 										<h3 className="text-[2rem] leading-[2.3rem] relative lg:static right-[1rem]">
@@ -302,7 +305,7 @@ const Home = () => {
 									data-aos-delay="600"
 									data-aos-duration="500"
 									data-aos="zoom-out-up"
-									className="flex items-start gap-[20px] my-4">
+									className="flex items-start gap-[20px] my-2">
 									<FaTools className=" text-[6rem] lg:text-[3rem]  relative lg:static left-[1.6rem] top-3 " />
 									<div className="flex flex-col">
 										<h3 className="text-[2rem] p-4 lg:p-auto relative lg:static right-4">
@@ -318,7 +321,7 @@ const Home = () => {
 									data-aos-delay="600"
 									data-aos-duration="500"
 									data-aos="zoom-out-up"
-									className="flex items-start gap-[20px] my-4">
+									className="flex items-start gap-[20px] my-2">
 									<FaBox className=" text-[7rem] lg:text-[3rem]   relative left-[2rem] bottom-4 lg:bottom-0 " />
 									<div className="flex flex-col ">
 										<h3 className="text-[2rem] px-12 lg-p-auto leading-11 lg:leading-normal relative lg:static right-4 ">
