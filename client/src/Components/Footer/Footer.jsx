@@ -43,9 +43,7 @@ export default function Footer() {
 					<p className="text-sm text-center md:text-left">
 						<a href="tel://1165282356">Tel: 11 6528 2356</a>
 					</p>
-					<p className="text-sm text-center md:text-left">
-						<a href="">Email:</a>
-					</p>
+					
 					<p className="text-sm text-center md:text-left">
 						El Rincón 951, Pilar Centro, Provincia de Buenos Aires
 					</p>

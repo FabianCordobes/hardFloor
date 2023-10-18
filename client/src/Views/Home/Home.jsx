@@ -35,7 +35,7 @@ import { isMobile } from 'react-device-detect';
 
 const Home = () => {
 	return (
-		<div className="flex flex-col items-center ">
+		<main className="flex flex-col items-center ">
 			{/* Imagen principal */}
 			<ImagenPrincipal />
 
@@ -389,7 +389,7 @@ const Home = () => {
 			<div className="w-full">
 				<Footer />
 			</div>
-		</div>
+		</main>
 	);
 };
 

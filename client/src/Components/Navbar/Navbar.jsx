@@ -125,43 +125,57 @@ const Navbar = () => {
 					</div>
 
 					<ul className="flex flex-row justify-center gap-6 text-black text-xl font-bold">
-						<a
-							href="#home"
-							className="nav-link smooth-scroll">
-							INICIO
-						</a>
-						<a
-							href="#serviciosPrev"
-							className="nav-link smooth-scroll">
-							SERVICIOS
-						</a>
-						<a
-							href="#preciosPrev"
-							className="nav-link smooth-scroll">
-							PRECIOS
-						</a>
-						<a
-							href="#nosotrosPrev"
-							className="nav-link smooth-scroll">
-							NOSOTROS
-						</a>
-						<a
-							href="#contactoPrev"
-							className="nav-link smooth-scroll">
-							CONTACTO
-						</a>
+						<li>
+							<a
+								href="#home"
+								className="nav-link smooth-scroll">
+								INICIO
+							</a>
+						</li>
+						<li>
+							<a
+								href="#serviciosPrev"
+								className="nav-link smooth-scroll">
+								SERVICIOS
+							</a>
+						</li>
+						<li>
+							<a
+								href="#preciosPrev"
+								className="nav-link smooth-scroll">
+								PRECIOS
+							</a>
+						</li>
+						<li>
+							<a
+								href="#nosotrosPrev"
+								className="nav-link smooth-scroll">
+								NOSOTROS
+							</a>
+						</li>
+						<li>
+							<a
+								href="#contactoPrev"
+								className="nav-link smooth-scroll">
+								CONTACTO
+							</a>
+						</li>
 					</ul>
 					<ul className="text-black flex justify-center gap-4 mr-4">
-						<Link
-							to={'https://instagram.com/hard.floor?igshid=MzRlODBiNWFlZA=='}
-							target="blank_">
-							<FaInstagram className="text-3xl nav-link smooth-scroll" />
-						</Link>
-						<Link
-							to={'https://www.facebook.com/hardfloor1?mibextid=LQQJ4d'}
-							target="blank_">
-							<FaFacebook className="text-3xl nav-link " />
-						</Link>
+						<li>
+							<Link
+								to={'https://instagram.com/hard.floor?igshid=MzRlODBiNWFlZA=='}
+								target="blank_">
+								<FaInstagram className="text-3xl nav-link smooth-scroll" />
+							</Link>
+						</li>
+						<li>
+							<Link
+								to={'https://www.facebook.com/hardfloor1?mibextid=LQQJ4d'}
+								target="blank_">
+								<FaFacebook className="text-3xl nav-link " />
+							</Link>
+						</li>
 					</ul>
 				</nav>
 			)}
