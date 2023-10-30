@@ -344,7 +344,7 @@ const Home = () => {
 			<div>
 				<div
 					id="preciosPrev"
-					className="mt-[8rem] w-[92vw] py-4  px-8 bg-[#dad2cb] text-black flex flex-col items-start gap-8">
+					className="mt-[10rem] w-[92vw] py-4  px-8 bg-[#dad2cb] text-black flex flex-col items-start gap-8">
 					<h2 className=" self-center text-4xl">Precios</h2>
 					<div className=" flex flex-col items-start w-[100%]">
 						<ul className=" text-left flex flex-col gap-8 w-[100%]">
