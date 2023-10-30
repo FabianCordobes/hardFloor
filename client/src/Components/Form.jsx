@@ -51,9 +51,9 @@ export default function Form() {
 				className=" flex flex-col justify-center items-center gap-4 pt-[70px] pb-[60px] px-[40px] "
 				>
 				<div className="flex flex-col items-center justify-evenly">
-					<h4 className="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-600 self-start lg:pt-6">
+					<h3 className="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-600 self-start lg:pt-6">
 						CONTACTANOS
-					</h4>
+					</h3>
 				</div>
 
 				<div className="flex">
@@ -159,9 +159,9 @@ export default function Form() {
 								userData.user_localidad.length < 1 ||
 								userData.message.length < 1
 							}>
-							<h4 className="bg-red-600 lg:max-w-[60vw] h-[2rem] text-xl flex items-center justify-center">
+							<h3 className="bg-red-600 lg:max-w-[60vw] h-[2rem] text-xl flex items-center justify-center">
 								Enviar
-							</h4>
+							</h3>
 						</button>
 					</form>
 				</div>
