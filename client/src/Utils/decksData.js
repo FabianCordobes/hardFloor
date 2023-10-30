@@ -1,5 +1,5 @@
 import decks1 from '../assets/Decks/1.jpeg';
-import decks2 from '../assets/Decks/2.jpeg';
+import decks2 from '../assets/Decks/2.jpg';
 import decks3 from '../assets/Decks/3.jpg';
 import decks4 from '../assets/Decks/4.jpg';
 import decks5 from '../assets/Decks/5.jpg';
@@ -11,13 +11,11 @@ import decks10 from '../assets/Decks/10.jpg';
 import decks11 from '../assets/Decks/11.jpg';
 import decks12 from '../assets/Decks/12.jpg';
 import decks13 from '../assets/Decks/13.jpg';
-import decks14 from '../assets/Decks/14.jpeg';
+import decks14 from '../assets/Decks/14.jpg';
 import decks15 from '../assets/Decks/15.jpg';
 import decks16 from '../assets/Decks/16.jpeg';
 import decks17 from '../assets/Decks/17.jpg';
 import decks18 from '../assets/Decks/18.jpg';
-import decks19 from '../assets/Decks/19.jpg';
-import decks20 from '../assets/Decks/20.jpg';
 
 const decksImages = [
 	{ src: decks1, alt: 'Decks 1' },
@@ -38,8 +36,6 @@ const decksImages = [
 	{ src: decks16, alt: 'Decks 16' },
 	{ src: decks17, alt: 'Decks 17' },
 	{ src: decks18, alt: 'Decks 18' },
-	{ src: decks19, alt: 'Decks 19' },
-	{ src: decks20, alt: 'Decks 20' },
 ];
 
 export default decksImages;

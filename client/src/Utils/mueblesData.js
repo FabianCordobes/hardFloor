@@ -9,8 +9,8 @@ import muebles8 from '../assets/Muebles/8.jpg';
 import muebles9 from '../assets/Muebles/9.jpg';
 
 const mueblesImages = [
-	{ src: muebles1, alt: 'Muebles 1' },
 	{ src: muebles2, alt: 'Muebles 2' },
+	{ src: muebles1, alt: 'Muebles 1' },
 	{ src: muebles3, alt: 'Muebles 3' },
 	{ src: muebles4, alt: 'Muebles 4' },
 	{ src: muebles5, alt: 'Muebles 5' },

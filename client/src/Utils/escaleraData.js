@@ -5,8 +5,9 @@ import escaleras4 from '../assets/Escaleras/4.jpg';
 import escaleras5 from '../assets/Escaleras/5.jpg';
 import escaleras6 from '../assets/Escaleras/6.jpg';
 import escaleras7 from '../assets/Escaleras/7.jpg';
-import escaleras8 from '../assets/Escaleras/8.jpeg';
+import escaleras8 from '../assets/Escaleras/8.jpg';
 import escaleras9 from '../assets/Escaleras/9.jpeg';
+import escaleras10 from '../assets/Escaleras/10.jpeg';
 
 const escalerasImages = [
    {src: escaleras1, alt: 'Escaleras 1'},
@@ -18,6 +19,7 @@ const escalerasImages = [
    {src: escaleras7, alt: 'Escaleras 7'},
    {src: escaleras8, alt: 'Escaleras 8'},
    {src: escaleras9, alt: 'Escaleras 9'},
+   {src: escaleras10, alt: 'Escaleras 10'},
  
 ]
 
