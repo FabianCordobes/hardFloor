@@ -22,14 +22,14 @@ import precios from '../../Utils/precios';
 import marcoImg from '../../assets/marco.png';
 import bigMarco from '../../assets/big_marco.png';
 
-import maderas1 from '../../assets/tiposdeMadera/maderas_1.jpg';
-import maderas2 from '../../assets/tiposdeMadera/maderas_2.jpg';
-import maderas3 from '../../assets/tiposdeMadera/maderas_3.jpg';
-import maderas4 from '../../assets/tiposdeMadera/maderas_4.jpg';
-import maderas5 from '../../assets/tiposdeMadera/maderas_5.jpg';
-import maderas6 from '../../assets/tiposdeMadera/maderas_6.jpg';
-import maderas7 from '../../assets/tiposdeMadera/maderas_7.jpg';
-import maderas8 from '../../assets/tiposdeMadera/maderas_8.jpg';
+import maderas1 from '../../assets/tiposdeMadera/maderas_1.png';
+import maderas2 from '../../assets/tiposdeMadera/maderas_2.png';
+import maderas3 from '../../assets/tiposdeMadera/maderas_3.png';
+import maderas4 from '../../assets/tiposdeMadera/maderas_4.png';
+import maderas5 from '../../assets/tiposdeMadera/maderas_5.png';
+import maderas6 from '../../assets/tiposdeMadera/maderas_6.png';
+import maderas7 from '../../assets/tiposdeMadera/maderas_7.png';
+import maderas8 from '../../assets/tiposdeMadera/maderas_8.png';
 
 import { isMobile } from 'react-device-detect';
 
@@ -57,20 +57,20 @@ const Home = () => {
 							bgImage={serviceImg}
 							strength={700}
 							className="relative top-[1.78rem] w-[94vw] h-[22.3vh] ">
-							<div className=" lg:relative bottom-[2rem]  w-[95vw] h-[22vh] lg:h-[30vh] lg:p-12 flex justify-between lg:justify-center items-center flex-col lg:gap-8">
+							<div className=" lg:relative bottom-[2rem]  w-[95vw] h-[22vh] lg:h-[30vh] lg:p-12 flex justify-around lg:justify-center items-center flex-col lg:gap-8">
 								<h1
 									data-aos-duration="500"
 									data-aos="zoom-in-left"
 									className=" text-white text-2xl lg:text-6xl tracking-widest font-medium">
 									Nuestros Servicios
 								</h1>
-								<div className="flex text-white items-center justify-around flex-col lg:flex-row gap-4 lg:gap-4 lg:w-[85vw]">
-									<ul className="flex  justify-between lg:gap-[0rem] lg:w-[45vw] lg:text-2xl">
+								<div className="flex text-white items-center justify-center  flex-row gap-8 lg:gap-4 lg:w-[85vw]">
+									<ul className="flex  flex-col lg:flex-row justify-center gap-0 lg:gap-[1rem] lg:w-[45vw] lg:text-2xl text-left">
 										<li>Venta y colocación</li>
 										<li>Restauración</li>
 										<li>Parquet / Pisos con diseños </li>
 									</ul>
-									<ul className="flex  justify-between gap-12 lg:gap-[0rem] my-4 lg:my-0 lg:w-[30vw] lg:text-2xl">
+									<ul className="flex flex-col lg:flex-row justify-center  gap-0 lg:gap-[2rem] my-4 lg:my-0 lg:w-[30vw] lg:text-2xl text-left">
 										<li>Pulido </li>
 										<li>Hidrolaqueado</li>
 										<li>Plastificado</li>
@@ -181,43 +181,76 @@ const Home = () => {
 					</div>
 				</div>
 
-				<div className="w-[98.7vw] py-4 lg:py-0 lg:h-[40vh] bg-amber-800 mb-0 flex flex-col lg:flex-row items-center justify-around lg:justify-center gap-[2rem] ">
+				<div className="w-[98.7vw] py-4 lg:py-0 lg:h-[45vh] bg-amber-800 mb-0 flex flex-col lg:flex-row items-center justify-around lg:justify-center gap-[2rem] ">
 					<h2 className="lg:ml-2 px-4 lg:px-0 text-2xl">
 						Descubrí nuestros tipos de madera disponible
 					</h2>
 					<div className=" grid grid-cols-2 lg:grid-cols-4 w-[90%] lg:w-[60%] lg:max-h-[90%] lg:gap-2 mr-2">
-						<img
-							src={maderas1}
-							alt=""
-						/>
-						<img
-							src={maderas2}
-							alt=""
-						/>
-						<img
-							src={maderas3}
-							alt=""
-						/>
-						<img
-							src={maderas4}
-							alt=""
-						/>
-						<img
-							src={maderas5}
-							alt=""
-						/>
-						<img
-							src={maderas6}
-							alt=""
-						/>
-						<img
-							src={maderas7}
-							alt=""
-						/>
-						<img
-							src={maderas8}
-							alt=""
-						/>
+						<div className=''>
+							<img
+								src={maderas1}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Lapacho</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas2}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Incienso</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas3}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Guayubira</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas4}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Guatambu</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas5}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Anchico</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas6}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Viraro</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas7}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Eucaliptus Saligna</span>
+						</div>
+						<div className=''>
+							<img
+								src={maderas8}
+								alt=""
+								className='relative top-[20%]'
+							/>
+							<span className='relative bottom-[5px]'>Eucalipto</span>
+						</div>
+						
 					</div>
 				</div>
 

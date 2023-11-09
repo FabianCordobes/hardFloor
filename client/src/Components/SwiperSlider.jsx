@@ -41,7 +41,7 @@ function SwiperSlider({ productImages }) {
 									data-aos="zoom-in-up"
 									src={image.src}
 									alt={image.alt}
-									className=" cover w-[24rem] lg:w-[26rem] h-[18rem]"
+									className="  w-[24rem] lg:w-[26rem] h-[18rem]"
 								/>
 							</Zoom>
 						</div>

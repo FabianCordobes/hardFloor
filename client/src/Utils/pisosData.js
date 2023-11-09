@@ -9,6 +9,7 @@ import pisos8 from '../assets/Pisos/8.jpg';
 import pisos9 from '../assets/Pisos/9.jpg';
 import pisos10 from '../assets/Pisos/10.jpg';
 import pisos11 from '../assets/Pisos/11.jpg';
+import pisos12 from '../assets/Pisos/12.jpg';
 import pisos13 from '../assets/Pisos/13.jpeg';
 import pisos14 from '../assets/Pisos/14.jpg';
 import pisos15 from '../assets/Pisos/15.jpg';
@@ -36,7 +37,7 @@ const pisosImages = [
 	{ src: pisos9, alt: 'Pisos 9' },
 	{ src: pisos10, alt: 'Pisos 10' },
 	{ src: pisos11, alt: 'Pisos 11' },
-	{ src: pisos11, alt: 'Pisos 12' },
+	{ src: pisos12, alt: 'Pisos 12' },
 	{ src: pisos13, alt: 'Pisos 14' },
 	{ src: pisos14, alt: 'Pisos 15' },
 	{ src: pisos15, alt: 'Pisos 16' },
@@ -44,7 +45,6 @@ const pisosImages = [
 	{ src: pisos17, alt: 'Pisos 18' },
 	{ src: pisos18, alt: 'Pisos 19' },
 	{ src: pisos19, alt: 'Pisos 20' },
-	{ src: pisos20, alt: 'Pisos 21' },
 	{ src: pisos21, alt: 'Pisos 21' },
 	{ src: pisos22, alt: 'Pisos 22' },
 	{ src: pisos23, alt: 'Pisos 23' },
