@@ -61,16 +61,16 @@ const Home = () => {
 								<h1
 									data-aos-duration="500"
 									data-aos="zoom-in-left"
-									className=" text-white text-2xl lg:text-6xl tracking-widest font-medium">
+									className=" text-white text-3xl lg:text-6xl tracking-widest font-medium">
 									Nuestros Servicios
 								</h1>
 								<div className="flex text-white items-center justify-center  flex-row gap-8 lg:gap-4 lg:w-[85vw]">
-									<ul className="flex  flex-col lg:flex-row justify-center gap-0 lg:gap-[1rem] lg:w-[45vw] lg:text-2xl text-left">
+									<ul className="flex  flex-col lg:flex-row justify-center gap-0 lg:gap-[1rem] lg:w-[45vw] text-md  lg:text-2xl text-left">
 										<li>Venta y colocación</li>
 										<li>Restauración</li>
 										<li>Parquet / Pisos con diseños </li>
 									</ul>
-									<ul className="flex flex-col lg:flex-row justify-center  gap-0 lg:gap-[2rem] my-4 lg:my-0 lg:w-[30vw] lg:text-2xl text-left">
+									<ul className="flex flex-col lg:flex-row justify-center  gap-0 lg:gap-[2rem] my-4 lg:my-0 lg:w-[30vw] text-md lg:text-2xl text-left">
 										<li>Pulido </li>
 										<li>Hidrolaqueado</li>
 										<li>Plastificado</li>
@@ -192,7 +192,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Lapacho</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Lapacho</span>
 						</div>
 						<div className=''>
 							<img
@@ -200,7 +200,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Incienso</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Incienso</span>
 						</div>
 						<div className=''>
 							<img
@@ -208,7 +208,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Guayubira</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Guayubira</span>
 						</div>
 						<div className=''>
 							<img
@@ -216,7 +216,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Guatambu</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Guatambu</span>
 						</div>
 						<div className=''>
 							<img
@@ -224,7 +224,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Anchico</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Anchico</span>
 						</div>
 						<div className=''>
 							<img
@@ -232,7 +232,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Viraro</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Viraro</span>
 						</div>
 						<div className=''>
 							<img
@@ -240,7 +240,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Eucaliptus Saligna</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Eucaliptus Saligna</span>
 						</div>
 						<div className=''>
 							<img
@@ -248,7 +248,7 @@ const Home = () => {
 								alt=""
 								className='relative top-[20%]'
 							/>
-							<span className='relative bottom-[5px]'>Eucalipto</span>
+							<span className='relative bottom-[5px] text-xl lg:text-2xl'>Eucalipto</span>
 						</div>
 						
 					</div>
