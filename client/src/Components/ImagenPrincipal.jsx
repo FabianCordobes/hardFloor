@@ -4,7 +4,7 @@ import imagen2 from '../assets/imagen2.webp';
 import imagen3 from '../assets/imagen3.webp';
 import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
-import imageMobileCompleta from '../assets/imagenMobilecompleta.png';
+import imageMobileCompleta from '../assets/EST.png';
 
 const ImagenPrincipal = () => {
 	return (
@@ -79,7 +79,7 @@ const ImagenPrincipal = () => {
 						data-aos-duration="1000"
 						className="relative z-1 flex flex-col justify-center left-[10.7rem] bottom-[8rem] text-right text-4xl font-extrabold leading-[3rem] ">
 						<li>DISEÑO</li>
-						<li>CALIDAD</li>
+						<li>CONFIANZA</li>
 						<li>CONFORT</li>
 						<li>TECNOLOGÍA</li>
 					</ul>
